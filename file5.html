@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Install Star Voyager</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #000428, #004e92);
+      color: #e0e7ff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: rgba(0, 0, 0, 0.7);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      text-shadow: 0 0 8px #00fff7;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-style: italic;
+      color: #a0d8ff;
+    }
+
+    main {
+      flex: 1;
+      max-width: 900px;
+      margin: 2rem auto;
+      background: rgba(10, 10, 30, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 0 25px #00fff7aa;
+      padding: 2rem;
+    }
+
+    .banner img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px #00fff7bb;
+    }
+
+    h2 {
+      color: #00fff7;
+      margin-top: 1.5rem;
+      text-align: center;
+      letter-spacing: 1.5px;
+    }
+
+    .description, .requirements {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #cce7ff;
+    }
+
+    ul {
+      list-style-type: square;
+      margin-left: 1.5rem;
+    }
+
+    .download-buttons {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: #00fff7;
+      color: #001f27;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-decoration: none;
+      box-shadow: 0 0 15px #00fff7aa;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #00c9d9;
+      box-shadow: 0 0 25px #00c9d9cc;
+    }
+
+    footer {
+      background: rgba(0,0,0,0.7);
+      text-align: center;
+      padding: 1rem;
+      color: #89cfff;
+      font-size: 0.9rem;
+      box-shadow: 0 -3px 10px rgba(0, 255, 255, 0.3);
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      .download-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .btn {
+        width: 80%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Star Voyager</h1>
+    <p>Explore the galaxy. Conquer the stars.</p>
+  </header>
+
+  <main>
+    <div class="banner">
+      <img src="https://via.placeholder.com/900x350?text=Star+Voyager+Game+Banner" alt="Star Voyager Game Banner" />
+    </div>
+
+    <h2>About the Game</h2>
+    <div class="description">
+      <p>
+        Star Voyager is a thrilling space exploration and combat game that puts you in command of your own starship.
+        Journey through unknown galaxies, engage in epic battles, and build your interstellar empire.
+        Stunning graphics, dynamic gameplay, and a vast universe await!
+      </p>
+    </div>
+
+    <h2>System Requirements</h2>
+    <div class="requirements">
+      <ul>
+        <li>OS: Windows 10 / macOS 10.15 or later</li>
+        <li>Processor: Intel Core i5 or equivalent</li>
+        <li>Memory: 8 GB RAM</li>
+        <li>Graphics: NVIDIA GTX 970 or AMD equivalent</li>
+        <li>Storage: 10 GB available space</li>
+      </ul>
+    </div>
+
+    <div class="download-buttons">
+      <a href="https://example.com/download/star-voyager-windows.exe" download class="btn" aria-label="Download for Windows">
+        ⬇ Download for Windows
+      </a>
+      <a href="https://example.com/download/star-voyager-macos.dmg" download class="btn" aria-label="Download for macOS">
+        ⬇ Download for macOS
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.starvoyager" target="_blank" rel="noopener" class="btn" aria-label="Get on Google Play">
+        📱 Get on Google Play
+      </a>
+      <a href="https://apps.apple.com/app/star-voyager/id123456789" target="_blank" rel="noopener" class="btn" aria-label="Get on App Store">
+        🍎 Get on App Store
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Star Voyager Studios. All rights reserved.
+  </footer>
+
+</body>
+</html>
