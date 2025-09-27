@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Moving Dragon Animation</title>
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, #87ceeb 0%, #1e3c72 100%);
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .dragon {
+    font-size: 5rem;
+    position: relative;
+    animation: flyAcross 8s linear infinite;
+  }
+
+  @keyframes flyAcross {
+    0% {
+      left: -100px;
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      left: 100vw;
+      transform: rotate(0deg);
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="dragon" role="img" aria-label="Flying dragon">🐉</div>
+
+</body>
+</html>
